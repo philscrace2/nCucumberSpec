@@ -16,6 +16,11 @@ namespace Gherkin.Specs.Helper
             return GetTestFiles("bad");
         }
 
+        public static IEnumerable<object[]> GetnCucumberSpecTestFiles()
+        {
+            return GetTestFiles("nCucumberSpec");
+        }
+
         private static IEnumerable<object[]> GetTestFiles(string category)
         {
             string testFileFolder = GetTestFileFolder(category);
@@ -27,7 +32,7 @@ namespace Gherkin.Specs.Helper
 
         public static string GetTestFileFolder(string category)
         {
-            return Path.GetFullPath(Path.Combine(TestFolders.InputFolder, "..", "..", "..", "..", @"testdata", category));
+            return Path.GetFullPath(Path.Combine(TestFolders.InputFolder, "..", "..", "..", @"testdata", category));
         }
     }
 }
