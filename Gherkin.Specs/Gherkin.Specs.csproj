@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Gherkin\Gherkin.csproj" />
+    <ProjectReference Include="..\nCucumberSpec.Core\nCucumberSpec.Core.csproj" />
   </ItemGroup>
 
 </Project>

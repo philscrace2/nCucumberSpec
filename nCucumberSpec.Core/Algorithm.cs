@@ -9,7 +9,7 @@ namespace nCucumberSpec
 
     public class Algorithm
     {
-        public Model GenerateModel(List<TestScenario> scenarios)
+        public Model GenerateModel(List<Scenario> scenarios)
         {
             Model model = new Model();
 
